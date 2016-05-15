@@ -1,28 +1,12 @@
-# This code is supporting material for the book
-# Building Machine Learning Systems with Python
-# by Willi Richert and Luis Pedro Coelho
-# published by PACKT Publishing
-#
-# It is made available under the MIT License
-
 import sklearn.datasets
 import scipy as sp
 
-new_post = \
-    """Disk drive problems. Hi, I have a problem with my hard disk.
-After 1 year it is working only sporadically now.
-I tried to format it, but now it doesn't boot any more.
-Any ideas? Thanks.
-"""
-
-print("""\
-Dear reader of the 1st edition of 'Building Machine Learning Systems with Python'!
-For the 2nd edition we introduced a couple of changes that will result into
-results that differ from the results in the 1st edition.
-E.g. we now fully rely on scikit's fetch_20newsgroups() instead of requiring
-you to download the data manually from MLCOMP.
-If you have any questions, please ask at http://www.twotoreal.com
-""")
+new_post = """ Hello world"""
+#     """Disk drive problems. Hi, I have a problem with my hard disk.
+# After 1 year it is working only sporadically now.
+# I tried to format it, but now it doesn't boot any more.
+# Any ideas? Thanks.
+# """
 
 all_data = sklearn.datasets.fetch_20newsgroups(subset="all")
 print("Number of total posts: %i" % len(all_data.filenames))
